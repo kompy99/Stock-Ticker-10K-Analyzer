@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+Code/data/10k_downloads
+Code/data/10k_processed
+Code/data/chroma_db
+
 # C extensions
 *.so
 
