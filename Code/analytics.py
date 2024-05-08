@@ -10,10 +10,9 @@ logging.basicConfig(stream=sys.stderr, level=logging.INFO)
 AZURE_OPENAI_API_KEY = "<AZURE_OPENAI_API_KEY>"
 AZURE_OPENAI_ENDPOINT = "<AZURE_OPENAI_ENDPOINT>"
 
-
 def query_gpt(query, context):
-    azclient = AzureOpenAI(azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT"), 
-                           api_key=os.getenv("AZURE_OPENAI_API_KEY"),  
+    azclient = AzureOpenAI(azure_endpoint = AZURE_OPENAI_ENDPOINT, 
+                           api_key=AZURE_OPENAI_API_KEY,  
                            api_version="2024-02-01")
     
     template = """
